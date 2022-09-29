@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Messages{% endblock %}
+
+{% block body %}
+<h2>Détails Messages</h2>
+    <h3>{{ msg.theme }}</h3>
+    <p>{{ msg.createdAt | date('d/m/Y')}}</p> à {{ msg.createdAt | date('H:i')}}
+{% endblock %}

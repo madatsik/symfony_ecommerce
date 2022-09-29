@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+<form>
+    <h2 class="text-danger">Connexion</h2>
+    <div class="form-group">
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">E-mail</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Mot de passe</label>
+        </div>
+      </div>
+  <button type="button" class="btn btn-outline-danger">Se connecter</button>
+  <a href="#" text-muted >Mot de passe oublié.</a>
+  <a href="#" class="text-info">Créer un compte</a>
+</form>
+{% endblock %}

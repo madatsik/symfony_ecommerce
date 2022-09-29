@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Messages{% endblock %}
+
+{% block body %}
+<h2>Messages</h2>
+{% for m in msg %}
+    <h3>{{ m.theme }}</h3>
+    <p>{{ m.createdAt | date('d/m/Y')}}</p> à {{ m.createdAt | date('H:i')}}
+{% endfor %}
+{% endblock %}
